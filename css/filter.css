@@ -1,0 +1,128 @@
+#advace__search{
+    padding: 10px 5px;
+    background-color: #d8d8d8;
+    box-shadow: 0 0 11px 0 rgba(111,110,110,0.5);
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+   } 
+   .main__search{
+     display: flex;
+     justify-content: space-around;
+   }
+   .main__price{
+    display: flex;
+    align-items: center;
+    width: 20em;
+   }
+   .main__price label{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+   }
+   .main__price input{
+     border-radius: 4px;
+     color: black;
+     width: 100px;
+     margin-left: 30px;
+     height: 30px;
+     
+   }
+   .main__serach--button{
+    width: 20em;
+    display: flex;
+   }
+   .main__serach--button button{
+      width: 100%;
+     background:#1352ff;
+     border: 1px solid #d8d8d8;
+     border-radius: 4px;
+   }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #1352ff;
+    background-image: none;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #1352ff;
+    overflow: hidden;
+    border-radius: .25em;
+  }
+  select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #1352ff;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+  /* Transition */
+  .select:hover::after {
+    color:white;
+  }
+
+
+   
+  @media screen and (max-width: 768px) {
+    .main__search{
+        display: flex;
+        flex-direction: column;
+      }
+      .select{
+          width: 100%;
+          margin-top: 15px;
+      }
+      .main__price{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .born__date{
+          padding: 0 8px 0 0;
+      }
+      .buraxilis{
+          position: relative;
+          right: 12px;
+      }
+      .main__serach--button{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .main__serach--button button{
+        height: 40px;
+        font-size: 20px;
+        margin-top: 15px;
+      }
+      #advace__search{
+        margin-top: -300px;
+      }
+  }

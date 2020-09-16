@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cars</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/filter.css" media="All">
 </head>
 <body>
     
@@ -16,7 +18,7 @@
                 <div class="mobile-bar">
                     <label for="menu-toggle" class="menu-icon">
                         <span></span>
-                    </label>
+                    </label> 
                 </div>
         
                 <header class="header">
@@ -40,6 +42,54 @@
                 </a>
             </div>
             </header>
+            <section id="search">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <form action="POST">
+                                <div id="advace__search">
+                                  <div class="main__search">
+                                    <div class="select">
+                                      <select name="slct" id="slct">
+                                        <option selected disabled>Ölkəni seçin</option>
+                                      </select>
+                                    </div>
+                                    <div class="select">
+                                      <select name="slct" id="slct">
+                                        <option selected disabled>Marka</option>
+                                      </select>
+                                    </div>
+                                    <div class="select">
+                                      <select name="slct" id="slct">
+                                        <option selected disabled>Model</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="main__search">
+                                   <div class="main__price">
+                                     <label  class="buraxilis" for="">Qiymət</label>
+                                    <input type="text">
+                                    <input type="text">
+                                   </div>
+                                   <div class="main__price">
+                                    <label for="">Buraxılış</label>
+                                    <div class="born__date">
+                                        <input type="text">
+                                        <input type="text">
+                                    </div>
+                                  </div>
+                                    <div class="main__serach--button">
+                                       <button>Axtar</button>
+                                       <button>Ətraflı axtar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
        
    
     

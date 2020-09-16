@@ -1,4 +1,4 @@
-/*This code is property of Conor McNamara*/
+This code is property of Conor McNamara
 /*https://codepen.io/conorjmcnamara/*/
 
 .main_container {
@@ -263,6 +263,7 @@ p {
     width: 100%;
 }
 
+   
 @media (min-width: 1000px) {
     .mobile-bar {
         display: none;
@@ -288,6 +289,6 @@ p {
     .header a {
         padding: 15px 35px;
         color: white;
-        /*header height and text spacing*/
     }
+    
 }   
