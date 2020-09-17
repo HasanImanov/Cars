@@ -49,6 +49,9 @@
     background: #1352ff;
     background-image: none;
   }
+  .born__date{
+      display: flex;
+  }
   /* Remove IE arrow */
   select::-ms-expand {
     display: none;
@@ -91,7 +94,7 @@
 
 
    
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     .main__search{
         display: flex;
         flex-direction: column;

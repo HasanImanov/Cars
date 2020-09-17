@@ -1,0 +1,23 @@
+.ana{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 8px 0 0px;
+}
+.masinlar{
+    height: 100px;
+    border: 1px solid red;
+    width: 25%;
+    margin: 0px 9px 0 22px;
+}
+@media screen and (max-width: 768px){
+    .ana{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .masinlar{
+        width: 41%;
+        margin-top: 20px;
+    }
+}

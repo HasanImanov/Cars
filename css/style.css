@@ -198,6 +198,8 @@ p {
     visibility: visible;
     opacity: 1;
     transition-delay: 0s;
+    position: relative;
+    z-index: 1;
 }
 
 .header {
