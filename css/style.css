@@ -242,7 +242,7 @@ p {
     transition: background-color 300ms ease-in;
 }
 .logo{
-    position: fixed !important;
+    position: fixed  ;
 }
 .navbar-brand {
     padding: 0px;
@@ -264,13 +264,22 @@ p {
     top: 0;
     width: 100%;
 }
-
+@media (max-width: 992px){
+    .logo{
+        position: fixed !important;
+    }
+}
+@media (max-width: 1400px){
+    
+}
    
 @media (min-width: 1000px) {
     .mobile-bar {
         display: none;
     }
-    
+    .logo{
+        position: fixed ;
+    }
     .header {
         padding-top: 0;
         width: 100%;

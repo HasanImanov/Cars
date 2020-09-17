@@ -10,6 +10,23 @@
     width: 25%;
     margin: 0px 9px 0 22px;
 }
+.elan{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 15px 0 18px;
+}
+.elan h3{
+    color: white;
+}
+.elan a{
+    text-decoration: none;
+    color: white;
+}
+.elan a:hover{
+    color: #1352ff;
+    transition: 0.3s linear;
+}
 @media screen and (max-width: 768px){
     .ana{
         display: flex;
