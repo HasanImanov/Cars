@@ -42,7 +42,7 @@
     margin: 0 0 0 -9px;
 }
 .cars__info div h5{
-    color: white;
+    color: #545252;
     margin-left: 10px;
 }
 .cars__orders p{
@@ -58,11 +58,12 @@
     padding: 50px 15px 0 18px;
 }
 .elan h3{
-    color: white;
+    color: #545252;
+    font-weight: bold;
 }
 .elan a{
     text-decoration: none;
-    color: white;
+    color: #545252;
 }
 .elan a:hover{
     color: #1352ff;
@@ -80,5 +81,14 @@
     }
     .masinlar ul li{
         font-size: 12px;
+    }
+    .cars__orders p{
+        font-size: 14px;
+        padding: 3px 0 0 0;
+    }
+    .cars__info div h5:first-child{
+        font-size: 18px;
+        word-break: break-all;
+       
     }
 }
