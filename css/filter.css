@@ -26,6 +26,7 @@
      width: 100px;
      margin-left: 30px;
      height: 30px;
+     border: none;
      
    }
    .main__serach--button{
@@ -37,6 +38,8 @@
      background:#1352ff;
      border: 1px solid #d8d8d8;
      border-radius: 4px;
+     color: white;
+    font-weight: bold;
    }
   select {
     -webkit-appearance: none;
