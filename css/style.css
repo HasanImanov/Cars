@@ -41,7 +41,7 @@ body {
     mso-margin-top-alt: 0px;
     mso-margin-bottom-alt: 0px;
     mso-padding-alt: 0px 0px 0px 0px;
-    background: green;
+    background: #ececec!important;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -288,7 +288,7 @@ p {
         visibility: visible;
         opacity: 1;
         text-align: right;
-        background:black;
+        background:#ececec;
     }
     .header li {
         display: inline-block;
@@ -299,7 +299,7 @@ p {
     }
     .header a {
         padding: 15px 35px;
-        color: white;
+        color: black;
     }
     
 }   
