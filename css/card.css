@@ -1,13 +1,14 @@
 .ana{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     width: 100%;
     padding: 20px 8px 0 0px;
 }
 .masinlar{
     height: 230px;
     
-    width: 25%;
+    width: 22%;
     margin: 0px 9px 0 22px;
 }
 .masinlar img{
@@ -26,7 +27,7 @@
 .cars__orders{
     display: flex;
     justify-content: center;
-    background: #1352ff;
+    background: rgb(0 98 101);
     width: 50%;
     height: 25px;
     position: relative;
@@ -66,7 +67,7 @@
     color: #545252;
 }
 .elan a:hover{
-    color: #1352ff;
+    color: rgb(0 98 101);
     transition: 0.3s linear;
 }
 @media screen and (max-width: 768px){

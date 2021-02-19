@@ -249,15 +249,14 @@ p {
 }
 
 .navbar-brand>img {
-    height: 40px;
+    height: 150px;
     width: auto;
     z-index: 10;
     position: absolute;
-    top: 13.45px;
+    top: -30.55px;
     left: 0;
-    padding: 0 25px;
+    /* padding: 0 25px; */
     /*BAR HOW MUCH IN RIGHT*/
-    background-color: white;
 }
 
 .test {
