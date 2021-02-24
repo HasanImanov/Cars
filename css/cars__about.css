@@ -1,0 +1,83 @@
+.cars__ana{
+    display: flex;
+    flex-direction: column;
+}
+.slide{
+    height: 300px;
+    border: 1px solid red;
+}
+.cars__about{
+    height: 300px;
+    border: 1px solid red;
+}
+.section-title{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 60px;
+    /* padding: 0 20px; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #efefef;
+}
+.breadcrumbs {
+    display: inline-block;
+    font-size: 0;
+    padding: 0;
+}
+
+.breadcrumbs-i {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    color: #4a4a4a;
+    font-size: 19px;
+}
+.breadcrumbs-a {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    color: #4a4a4a;
+    font-size: 19px;
+}
+.breadcrumbs-a::before{
+   
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+    top:-4px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    margin: auto;
+    width: 8px;
+    height: 2px;
+    background-color: #b7b7b7;
+}
+.breadcrumbs-a::after{
+    
+    -webkit-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    top:6px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    margin: auto;
+    width: 8px;
+    height: 2px;
+    background-color: #b7b7b7;
+}
+
+@media screen and (max-width: 768px){
+    
+}
