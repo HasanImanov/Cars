@@ -22,7 +22,7 @@
     justify-content: space-between;
     overflow: hidden;
     height: 60px;
-    /* padding: 0 20px; */
+    padding: 0 12px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom: 1px solid #efefef;
