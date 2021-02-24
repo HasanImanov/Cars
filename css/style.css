@@ -261,12 +261,19 @@ p {
 
 .test {
     top: 0;
-    height: 100px;
+    height: 370px;
     width: 100%;
 }
 @media (max-width: 992px){
     .logo{
         position: fixed !important;
+    }
+}
+@media (min-width: 768px){
+    .test {
+        top: 0;
+        height: 100px;
+        width: 100%;
     }
 }
 @media (max-width: 1400px){
