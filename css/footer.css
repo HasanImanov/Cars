@@ -36,7 +36,10 @@
     width: 60%;
 }
 .footer_-right{
-    float: right;
+    float: left;
+}
+.footer_-right ul li i{
+  font-size: 22px;
 }
 .footer-links
 {
@@ -49,7 +52,8 @@
 }
 .footer-links a
 {
-  color:#b59e9e
+  color:#b59e9e;
+  margin: 0px 0 0 10px;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
