@@ -273,6 +273,7 @@ p {
     height: 370px;
     width: 100%;
 }
+
 .marg{
     margin-top: -260px;
 }
@@ -362,6 +363,7 @@ p {
     
 
 }
+
 .desk{
     display: none;
 }
@@ -385,6 +387,7 @@ p {
         height: 100px;
         width: 100%;
     }
+    
     .ata{
     margin-top: 50px;
 }

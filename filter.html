@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cars</title>
+        <link rel="icon" type="image/png"  href="images/hsn2.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cars__about.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/filter.css" media="All">
+        <link rel="stylesheet" href="css/card.css" media="All">
+          <link rel="stylesheet" href="css/footer.css" media="All">
+    </head>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header >
+                    <div class="test">
+                <input type="checkbox" class="menu-toggle" id="menu-toggle">
+                <div class="mobile-bar">
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                    </label> 
+                </div>
+                <header class="header">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Haqqımızda</a></li>
+                            <li><a href="#">Əlaqə</a></li>
+                            <li>
+                                <a href="#">
+                                    <p>Login</p>
+                                </a>
+                            </li>
+                            <li><a href="#" class="fancy-button pop-onhover bg-gradient3"><span>Sign Up</span></a></li>
+        
+                        </ul>
+                    </nav>
+                </header>
+        
+                <a class="navbar-brand" href="index.html" style="padding:0px;">
+                    <img class="logo" src="images/hsn2.png">
+                </a>
+            </div>
+            </header>
+            </div>
+        </div>
+    </div>
+
+    <section class="filter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="details">
+                            <h3>Ətraflı Axtarış</h3>
+                        </div>
+                        <form action="">
+                            <div class="full_search">
+                                <div class="fırst tak">
+                                    <label for="">Ölkəni seçin</label>
+                                    <select class="search_result" name="" id="">
+                                        <option value="Lada">Bütün ölkələr</option>
+                                        <option value="Lada">Azərbaycan</option>
+                                        <option value="Lada">Almaniya</option>
+                                        <option value="Lada">Amerika Birləşmiş Ştatları</option>
+                                        <option value="Lada">Koreya</option>
+                                        <option value="Lada">Gürcüstan</option>
+                                    </select>
+                                </div>
+                                <div class="second">
+                                    <label for="">Valyuta</label>
+                                    <select class="search_result" name="" id="">
+                                        <option value="Lada">Bütün</option>
+                                        <option value="Lada">AZN</option>
+                                        <option value="Lada">USD</option>
+                                        <option value="Lada">EURO</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="full_search">
+                                <div class="fırst">
+                                    <label for="">Marka</label>
+                                    <select class="search_result" name="" id="">
+                                        <option value="Lada">Bütün markalar</option>
+                                        <option value="Lada">Lada</option>
+                                    </select>
+                                </div>
+                                <div class="second">
+                                    <label for="">Model</label>
+                                    <select class="search_result" name="" id="">
+                                        <option value="Lada">Bütün modellər</option>
+                                        <option value="Lada">Niva</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="full_search">
+                                <div class="fırst">
+                                    <label for="">Şəhər</label>
+                                    <select class="search_result" name="" id="">
+                                        <option value="Lada">Bütün şəhərlər</option>
+                                        <option value="Lada">Bakı</option>
+                                    </select>
+                                </div>
+                                <div class="second tak">
+                                    <label for="">Yanacaq növü</label>
+                                    <select class="search_result" name="" id="">
+                                        <option value="Lada">Bütün tiplər</option>
+                                        <option value="Lada">Benzin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="full_search">
+                                <div class="fırst tak">
+                                    <label for="">Ban növü</label>
+                                    <select class="search_result" name="" id="">
+                                        <option value="Lada">Bütün tiplər</option>
+                                        <option value="Lada">Sedan</option>
+                                    </select>
+                                </div>
+                                <div class="second">
+                                    <label for="">Ötürücü</label>
+                                    <select class="search_result" name="" id="">
+                                        <option value="Lada">Bütün tiplər</option>
+                                        <option value="Lada">Tam</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="full_search">
+                                <div class="fırst">
+                                    <label for="">Rəng</label>
+                                    <select class="search_result" name="" id="">
+                                        <option value="Lada">Bütün</option>
+                                        <option value="Lada">Ağ</option>
+                                    </select>
+                                </div>
+                                <div class="second tak">
+                                    <label  for="">Sürətlər qutusu</label>
+                                    <select class="search_result" name="" id="">
+                                        <option value="Lada">Bütün</option>
+                                        <option value="Lada">Avtomat</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="full_search">
+                                <div class="fırst">
+                                    <label for="">Yürüş</label>
+                                    <label class="lb" for="">min</label>
+                                    <input class="inp" type="text" placeholder="">
+                                    <label style="
+                                    margin: 0 0 0 17px;
+                                " class="lb" for="">max</label>
+                                    <input class="inp" type="text" placeholder="">
+                                </div>
+                                <div class="fırst">
+                                    <label for="">Buraxılış</label>
+                                    <label class="lb" for="">min</label>
+                                    <input class="inp" type="text" placeholder="">
+                                    <label style="
+                                    margin: 0 0 0 17px;
+                                " class="lb" for="">max</label>
+                                    <input class="inp" type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="full_search">
+                                <div class="fırst aper">
+                                    <label for="">Qiymət</label>
+                                    <label class="lb" for="">min</label>
+                                    <input class="inp" type="text" placeholder="">
+                                    <label style="
+                                    margin: 0 0 0 17px;
+                                " class="lb" for="">max</label>
+                                    <input class="inp" type="text" placeholder="">
+                                </div>
+                                <div class="fırst">
+                                    <label for="">Mühərrikin həcmi</label>
+                                    <label class="lb" for="">min</label>
+                                    <select class="search_res" name="" id="">
+                                        <option value="Lada">Bütün</option>
+                                        <option value="Lada">Avtomat</option>
+                                    </select>
+                                    <label style="
+                                    margin: 0 0 0 17px;
+                                " class="lb" for="">max</label>
+                                    <select class="search_res" name="" id="">
+                                        <option value="Lada">Bütün</option>
+                                        <option value="Lada">Avtomat</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="extra_details">
+                                <h3>Avtomobilin təchizatı</h3>
+                            </div>
+                            <div class="main_extra_details">
+                                <div class="extra_1">
+                                    <input class="" id="1" type="checkbox">
+                                    <label  for="1">ABS</label>
+                                    <input class="" id="2" type="checkbox">
+                                    <label  for="2">Yüngül lehimli disklər</label>
+                                    <input class="" id="3" type="checkbox">
+                                    <label  for="3">Dəri salon</label>
+                                    <input class="" id="4" type="checkbox">
+                                    <label  for="4">Oturacaqların ventilyasiyası</label>
+                                </div>
+                                <div class="extra_1">
+                                    <input class="" id="5" type="checkbox">
+                                    <label  for="5">Mərkəzi qapanma</label>
+                                    <input class="" id="6" type="checkbox">
+                                    <label  for="6">Park radarı</label>
+                                    <input class="" id="7" type="checkbox">
+                                    <label  for="7">Ksenon lampalar</label>
+                                    <input class="" id="8" type="checkbox">
+                                    <label  for="8">Lyuk</label>
+                                </div> 
+                                <div class="extra_1">
+                                    <input class="" id="9" type="checkbox">
+                                    <label  for="9">Kondisioner</label>
+                                    <input class="" id="10" type="checkbox">
+                                    <label  for="10">Arxa görüntü kamerası</label>
+                                    <input class="" id="11" type="checkbox">
+                                    <label  for="11">Oturacaqların isidilməsir</label>
+                                    <input class="" id="12" type="checkbox">
+                                    <label  for="12">Yan pərdələr</label>
+                                    <input class="" id="13" type="checkbox">
+                                    <label  for="13">Yağış sensoru</label>
+                                </div> 
+                               
+                            </div>
+                            <div class="main_search_button">
+                                <button>Axtar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div  class="footer_img">
+                    <img src="images/hsn2.png" alt="">
+                </div>
+              <p class="text-justify1">Forsaj.az komandası olaraq,sizə Almaniya,Amerika,Gürcüstan,Koreya və Azərbaycan maşınlarını bir arada topladıq.Administrasiya saytda yerləşdirilən banner reklamları və elanların məzmununa görə məsuliyyət daşımır  </p>
+            </div>
+  
+            
+  
+            <div class="col-xs-6 col-md-6">
+                <div class="footer_-right">
+                    <h6>Bizimlə əlaqə</h6>
+                    <ul class="footer-links">
+                      <li><i class="fa fa-home"></i><a href="">Ünvan: Yeni Günəşli qəsəbəsi 125A</a></li>
+                      <li><i class="fa fa-phone"></i><a href="">+994 70 201 12 94</a></li>
+                      <li><i class="fa fa-phone"></i><a href="">+994 51 399 99 57</a></li>
+                      <li><i class="fa fa-envelope"></i><a href="">forsaj@forsaj.az</a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+           <a href="#">HG-Group</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="app/app.js"></script>
+</body>
+</html>
