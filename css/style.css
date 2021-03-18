@@ -85,7 +85,7 @@ a:hover,
 a:focus,
 a:active {
     text-decoration: none;
-
+    color: white;
 }
 
 
@@ -522,6 +522,7 @@ font-size: 14px;
         align-items: center;
         background: rgb(0 98 101);
         margin-right: 80px;
+
     }
     .al{
         color: white !important;
