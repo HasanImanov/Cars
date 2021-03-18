@@ -124,7 +124,12 @@ p {
 .menu-toggle {
     display: none;
 }
-
+.sc{
+    margin-right: 8px;
+}
+.al{
+    display: none !important;
+}
 .mobile-bar {
     z-index: 10;
     position: fixed;
@@ -379,6 +384,21 @@ p {
 @media (max-width: 992px){
     .logo{
         position: fixed !important;
+
+    }
+    .adv_button {
+        position: fixed;
+        top: 17px;
+        right: 94px;
+        border: 1px solid grey;
+        border-radius: 4px;
+        width: 153px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(0 98 101);
+        color: white;
+        height: 37px;
     }
 }
 @media (min-width: 768px){
@@ -490,6 +510,21 @@ font-size: 14px;
     .header a {
         padding: 15px 35px;
         color: black;
+    }
+    .adv_button{
+        border: 1px solid grey;
+        border-radius: 4px;
+        width: 200px;
+        padding: 0px !important;
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0 98 101);
+        margin-right: 80px;
+    }
+    .al{
+        color: white !important;
     }
     
 }   
