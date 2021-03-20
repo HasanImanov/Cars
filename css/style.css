@@ -69,7 +69,11 @@ img {
 
 
 
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
 
 .wrapper {
     margin: 0% auto;
@@ -379,6 +383,14 @@ p {
     padding: 0;
 
 }
+.kll{
+    display: flex;
+}
+.hl{
+    display: block !important;
+
+}
+
 /* --------------- */
 
 @media (max-width: 992px){
@@ -386,6 +398,12 @@ p {
         position: fixed !important;
 
     }
+    
+    textarea{
+        height: 80px;
+        width: 250px;
+        border-radius: 4px;
+      }
     .adv_button {
         position: fixed;
         top: 17px;
@@ -407,6 +425,7 @@ p {
         height: 100px;
         width: 100%;
     }
+    
     
     .ata{
     margin-top: 50px;
@@ -471,6 +490,11 @@ font-size: 14px;
     font-size: 20px;
     padding: 5px;
 }
+textarea{
+    height: 80px;
+    width: 500px;
+    border-radius: 4px;
+  }
 
 .mob{
     display: none;

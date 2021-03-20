@@ -82,3 +82,7 @@ $(document).ready(function() {
       sync1.data('owl.carousel').to(number, 300, true);
     });
   });
+  
+
+
+  

@@ -101,6 +101,12 @@
     -o-transition: .25s all ease;
     transition: .25s all ease;
   }
+ 
+  
+/* image upload start */
+ 
+/* image upload end */
+
   /* Transition */
   .select:hover::after {
     color:white;
@@ -121,7 +127,7 @@
   border-radius: 4px;
 }
 .search_res{
-  width: 80px;
+    width: 250px;
     appearance: auto;
     height: 40px;
     border-radius: 4px;
@@ -189,7 +195,7 @@
   }
   .main_search_button{
     display: flex;
-    justify-content: center;
+    
     margin-bottom: 15px;
   }
   .main_search_button button{
@@ -203,6 +209,7 @@
     align-items: center;
     justify-content: center;
     color: white;
+    margin-right: 30px;
   }
   @media screen and (max-width: 992px) {
     .main__search{
@@ -280,7 +287,11 @@
         flex-direction: column;
         margin-top: 12px;
       }
+      .main_search_button{
+        display: block;
+      }
       .main_search_button button{
         width: 330px;
+        margin-top: 10px;
       }
   }
