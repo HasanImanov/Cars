@@ -225,6 +225,18 @@ p {
 .appbar__bottom--center-cut {
     grid-template: auto/1fr 4.5rem 1fr;
 }
+.cars__about_clr{
+    height: 62px;
+    background: floralwhite;
+    border-radius: 4px;
+}
+
+.masinlar :hover{
+    color:#545252;
+}
+.cars__orders :hover{
+    color:white;
+}
 .appbar__bottom {
     position: relative;
     display: grid;
