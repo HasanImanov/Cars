@@ -88,6 +88,10 @@
   {
     margin-bottom:30px
   }
+  .alaaa{
+    position: relative;
+    top: -61px;
+  }
 }
 @media (max-width:767px)
 {
@@ -106,6 +110,7 @@
   {
     text-align:center
   }
+ 
 }
 .social-icons
 {
@@ -141,6 +146,7 @@
   -o-transition:all .2s linear;
   transition:all .2s linear
 }
+
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
   color:#fff;
