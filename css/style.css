@@ -91,7 +91,69 @@ a:active {
     text-decoration: none;
     color: white;
 }
-
+/* -------login start---- */
+.card {
+    font-size: calc(90% + 0.01vw + 0.01vh);
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgb(0 0 0 / 10%);
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.input-icon {
+    position: relative;
+}
+.input-icon input {
+    padding-left: 45px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    /* padding: .375rem .75rem; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da !important;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.input-icon i {
+    color: #555;
+    opacity: 0.6;
+    border-right: 1px solid #ccc;
+    padding-right: 5px;
+    font-size: 16px;
+    left: 6px;
+    line-height: 22px;
+    position: absolute;
+    top: 9px;
+}
+.form-group button{
+    background-color:rgb(0 98 101);
+    transition: 0.9s ease;
+    border: none;
+}
+.form-group button:hover{
+    background-color:rgb(54 125 128);
+    border: none;
+}
+.card-footer a:hover{
+    color:#0000007a;
+}
+/* ------------ login end------------- */
 
 body {
     background-color: black;
@@ -428,6 +490,7 @@ p {
 
 }
 
+
 .desk{
     display: none;
 }
@@ -453,7 +516,11 @@ p {
         position: fixed !important;
 
     }
-    
+    .login{
+        width: 100%;
+        
+        margin-top: -290px;
+    }
     textarea{
         height: 80px;
         width: 250px;
@@ -569,6 +636,11 @@ textarea{
     .mobile_new_panel{
         display: none;
     }
+    .login{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
     .logo{
         position: fixed ;
     }

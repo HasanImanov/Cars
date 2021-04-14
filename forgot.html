@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="icon" type="image/png"  href="images/hsn2.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/filter.css" media="All">
+    <link rel="stylesheet" href="css/card.css" media="All">
+	<link rel="stylesheet" href="css/footer.css" media="All">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header >
+                    <div class="mobile_new_panel">
+                        <div class="appbar appbar__bottom appbar__bottom--center-cut">
+                            <a href="add_advertisement.html" class="appbar__bottom--fab appbar__bottom--fab-primary" title="Elan yerləşdir" aria-label="Elan yerləşdir">
+                                <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                            </svg>
+                            </a>
+                            <div class="appbar__bottom--normal d-flex justify-content-around align-content-around align-items-center">
+                                <a href="index.html">
+                                    <div class="mobile-bottom-nav__item">
+                                        <div class="mobile-bottom-nav__item-content">
+                                            <i class="fa fa-home" style="font-size: 20pt; margin-left: 5px;" aria-hidden="true"></i>
+                                            <br>Əsas
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="login.html">
+                                    <div class="mobile-bottom-nav__item">
+                                        <div class="mobile-bottom-nav__item-content">
+                                            <i class="fa fa-user" style="font-size: 20pt; margin-left: 5px;" aria-hidden="true"></i>
+                                            <br>Giriş
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" data-trigger="#navbar_main" style="display: none;">
+                                    <div class="mobile-bottom-nav__item">
+                                        <div class="mobile-bottom-nav__item-content">
+                                            <i class="fa fa-user" style="font-size: 20pt; margin-left: 5px;" aria-hidden="true"></i>
+                                            <br>Hesab
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="appbar__bottom--cutout d-flex justify-content-around align-content-around align-items-center">
+                                <span class="newsads">Yeni elan</span>
+                            </div>
+                            <div class="appbar__bottom--normal d-flex justify-content-around align-content-around align-items-center">
+                                <a href="carfax.html">
+                                    <div class="mobile-bottom-nav__item">
+                                        <div class="mobile-bottom-nav__item-content">
+                                            <i class="fa fa-car" style="font-size: 20pt; margin-left: 5px;" aria-hidden="true"></i>
+                                            <br>Carfax
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="filter.html" >
+                                    <div class="mobile-bottom-nav__item">
+                                        <div class="mobile-bottom-nav__item-content">
+                                            <i class="fa fa-search" style="font-size: 20pt; margin-left: 5px;" aria-hidden="true"></i>
+                                            <br>Axtar
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="test">
+                <input type="checkbox" class="menu-toggle" id="menu-toggle">
+                <div class="mobile-bar">
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                    </label> 
+                    <a class="adv_button button" href="add_advertisement.html"><i class="fa fa-plus sc" aria-hidden="true"></i>Elan yerləşdir</a>
+                </div>
+                
+        
+                <header class="header">
+                    <nav>
+                        <ul>
+                            <!-- ayqa elan yerlesdir hissesi iki yerdedi biride yuxaridadi -->
+                            <li><a class="adv_button button al" href="add_advertisement.html"><i class="fa fa-plus sc" aria-hidden="true"></i>Elan yerləşdir</a></li>
+                            <li><a href="#">Haqqımızda</a></li>
+                            <li><a href="#">Əlaqə</a></li>
+                            <li>
+                                <a href="login.html">
+                                    <p>Login</p>
+                                </a>
+                            </li>
+                            <li><a href="registration.html" class="fancy-button pop-onhover bg-gradient3"><span>Sign in</span></a></li>
+        
+                        </ul>
+                    </nav>
+                </header>
+        
+                <a class="navbar-brand" href="index.html" style="padding:0px;">
+                    <img class="logo" src="images/hsn2.png">
+                </a>
+            </div>
+            </header>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="login">
+                    <div class="card card-default mt-3 mb-3">
+                        <div class="panel-intro text-center pb-0">
+                            <h2 class="logo-title">ŞİFRƏ BƏRPA</h2>
+                        </div>
+                        <div class="card-body">
+                            <div id="FormAnswer"></div>
+                            <form class="ERA_FORMS" role="form" method="POST" action="">
+                                <div class="form-group">
+                                    <label for="sender-email" class="control-label">Elektron poçt ünvanı:</label>
+                                    <div class="input-icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <input type="email" name="email" class="form-control era_check" placeholder="Elektron poçt ünvanı">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12 col-md-12 py-1">
+                                        <button type="button" onclick="nextPrev()" class="btn btn-primary btn-block">Göndər</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer pb-0">
+                            <p class="text-center pull-left">
+                                <a href="registration.html">Qeydiyyat</a>
+                            </p>
+                            <p class="text-center pull-right">
+                                <a href="login.html">Giriş</a>
+                            </p>
+                            <div style=" clear:both"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div  class="footer_img">
+                    <img src="images/hsn2.png" alt="">
+                </div>
+              <p class="text-justify1">Forsaj.az komandası olaraq,sizə Almaniya,Amerika,Gürcüstan,Koreya və Azərbaycan maşınlarını bir arada topladıq.Administrasiya saytda yerləşdirilən banner reklamları və elanların məzmununa görə məsuliyyət daşımır  </p>
+            </div>
+  
+            
+  
+            <div class="col-xs-6 col-md-6">
+                <div class="footer_-right">
+                    <h6>Bizimlə əlaqə</h6>
+                    <ul class="footer-links">
+                      <li><i class="fa fa-home"></i><a href="">Ünvan: Yeni Günəşli qəsəbəsi 125A</a></li>
+                      <li><i class="fa fa-phone"></i><a href="">+994 70 201 12 94</a></li>
+                      <li><i class="fa fa-phone"></i><a href="">+994 51 399 99 57</a></li>
+                      <li><i class="fa fa-envelope"></i><a href="">forsaj@forsaj.az</a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+           <a href="#">HG-Group</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+      
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="app/app.js"></script>
+</body>
+</html>
