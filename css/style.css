@@ -230,6 +230,59 @@ p {
     background: floralwhite;
     border-radius: 4px;
 }
+.btn .badgebtns {
+    position: absolute;
+    left: 64px;
+    margin: -13px 0 0 0;
+    background-color: #1894a0;
+    color: #fff;
+}
+.btn .badgebtns1 {
+    position: absolute;
+    left: 156px;
+    margin: -13px 0 0 0;
+    background-color: #1894a0;
+    color: #fff;
+}
+.buttons_vip{
+    display: flex;
+}
+.badgebtns {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.badgebtns1 {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-services {
+    background-color: transparent;
+    color: #444 !important;
+    font-weight: bold !important;
+    border: 2px solid #1894a0;
+    transition: all 0.5s;
+}
+.btn-services:hover{
+    background-color: rgb(19 118 121 / 79%);
+}
+
+
 
 .masinlar :hover{
     color:#545252;
@@ -498,8 +551,7 @@ p {
     background:rgb(0 98 101) ;
     color: white;
     padding: 2px 0 0 10px;
-    
-
+    border-radius: 4px;
 }
 
 
@@ -633,7 +685,57 @@ textarea{
 .mob{
     display: none;
 }
-
+.buttons_vip{
+    margin: 0 0 0 14px;
+}
+.btn .badgebtns {
+    position: absolute;
+    bottom: 90px;
+    right: 277px;
+    background-color: #1894a0;
+    color: #fff;
+}
+.btn .badgebtns1 {
+    position: absolute;
+    bottom: 90px;
+    right: 185px;
+    background-color: #1894a0;
+    color: #fff;
+}
+.badgebtns1 {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.badgebtns {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-services {
+    background-color: transparent;
+    color: #444 !important;
+    font-weight: bold !important;
+    border: 2px solid #1894a0;
+    transition: all 0.5s;
+}
+.btn-services:hover{
+    background-color: rgb(19 118 121 / 79%);
+}
 
 
 }
@@ -656,6 +758,7 @@ textarea{
     .logo{
         position: fixed ;
     }
+
     .header {
         padding-top: 0;
         width: 100%;
