@@ -232,15 +232,15 @@ p {
 }
 .btn .badgebtns {
     position: absolute;
-    left: 64px;
-    margin: -13px 0 0 0;
+    /* left: 64px; */
+    margin: -14px 0 0 -24px;
     background-color: #1894a0;
     color: #fff;
 }
 .btn .badgebtns1 {
     position: absolute;
-    left: 156px;
-    margin: -13px 0 0 0;
+    /* left: 156px; */
+    margin: -14px 0 0 -24px;
     background-color: #1894a0;
     color: #fff;
 }
