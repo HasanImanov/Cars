@@ -16,7 +16,8 @@ $(document).ready(function() {
       nav: true,
       autoplay: false,
       dots: true,
-      loop: true,
+      loop: false,
+      rewind: true,
       responsiveRefreshRate : 200,
       navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
     }).on('changed.owl.carousel', syncPosition);
@@ -81,6 +82,7 @@ $(document).ready(function() {
       var number = $(this).index();
       sync1.data('owl.carousel').to(number, 300, true);
     });
+    
   });
   
   /*!

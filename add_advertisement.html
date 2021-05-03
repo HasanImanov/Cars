@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/filter.css" media="All">
+        <link rel="stylesheet" href="css/dropzone.css" media="All">
+        <link rel="stylesheet" href="css/ssi-uploader.css" media="All">
         <link rel="stylesheet" href="css/card.css" media="All">
         <link rel="stylesheet" href="css/footer.css" media="All">
     </head>
@@ -287,20 +289,29 @@
 
                             
                         </div>
+                        <style>
+                            .ssi-imgToUpload {
+                                width: 300px !important;
+                                height: 300px !important;
+                            }
 
+                            .ssi-imgToUploadTable {
+                                width: 310px !important;
+                            }
+                        </style>
                         <div class="row">
                                 <div class="col-md-12">
                                     <div class="row photos">
-                                        <div class="col-md-3 mb-2" id="choose">
+                                        <div class="col-md-12 mb-2" id="">
                                             <div style="background: #dadada; border-radius: 6px; position: relative; height: 100%;">
                                                 <label style="display: inline; margin: 0;">
-                                                    <div class="text-center" style="border: 2px dashed #eee; border-radius: 6px; padding: 22px;  top: 10px; right: 10px; bottom: 10px; left: 10px;">
+                                                    <!-- <div class="text-center" style="border: 2px dashed #eee; border-radius: 6px; padding: 22px;  top: 10px; right: 10px; bottom: 10px; left: 10px;">
                                                         <i class="fa fa-cloud-upload" style="font-size: 80px"></i>
                                                             <div>Şəkil yüklə</div>
-                                                    </div>
-                                                     <input name="files" type="file" accept="image/*" style="display: none;" multiple="">
-                                                 </label>
+                                                    </div> -->
+                                                    <input type="file" name="images[]" multiple id="ssi-upload"/>                                                 </label>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -316,9 +327,9 @@
                                 </div>
                                 <div class="second">
                                     <label for="">Nömrə</label>
-                                    <input class="inp" style="
+                                    <input class="inp" data-inputmask='"mask": "(999) 999-99-99"' data-mask id="phone" style="
                                     width: 250px;
-                                " type="number" placeholder="0702011294">
+                                " type="tel" placeholder="(xxx) xxx-xx-xx">
                                 </div>
                             </div>
                         <div class="main_search_button">
@@ -383,6 +394,62 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="app/dropzone.js"></script>
+    <script src="app/jquery.inputmask.bundle.min.js"></script>
+    <script src="app/ssi-uploader.js"></script>
+    <script>
+        var notifyOptions = {
+            iconButtons: {
+                className: 'fa fa-question about',
+                method: function (e, modal) {
+                    ssi_modal.closeAll('notify');
+                    var btn = $(this).addClass('disabled');
+                    ssi_modal.dialog({
+                        onClose: function () {
+                            btn.removeClass('disabled')
+                        },
+                        onShow: function () {
+                        },
+                        okBtn: {className: 'btn btn-primary btn-sm'},
+                        title: 'ssi-modal',
+                        content: 'ssi-modal is an open source modal window plugin that only depends on jquery. It has many options and it\'s super flexible, maybe the most flexible modal out there... For more details click <a class="sss" href="http://ssbeefeater.github.io/#ssi-modal" target="_blank">here</a>',
+                        sizeClass: 'small',
+                        animation: true
+                    });
+                }
+            }
+        };
+    
+        // option 1
+    
+    
+        $('#ssi-upload').ssi_uploader({
+            url: 'http://localhost:3300/upload',
+            inForm:true
+        });
+    
+        // option 2
+    
+        var uploader = $('#ssi-upload').ssi_uploader({
+            url: 'http://localhost:3300/upload'
+        });
+    
+        $( "#myForm" ).on( "submit", function( event ) {
+            event.preventDefault();
+            uploader.data('ssi_upload').uploadFiles();
+            uploader.on('onUpload.ssi-uploader',function(){
+                console.log('complete');
+                $( "#myForm" ).submit();
+            });
+        });
+        $('#ssi-upload2').ssi_uploader({url: 'uploadAction.php', preview: false});
+        $('#ssi-upload3').ssi_uploader({url: 'uploadAction.php', dropZone: false});
+        $('#ssi-upload4').ssi_uploader({url: 'uplodadAction.php', dropZone: false, allowed: ["pdf"]});
+
+			$(function () {
+				$('[data-mask]').inputmask();
+			});
+		</script>
     <script src="app/app.js"></script>
 </body>
 </html>
