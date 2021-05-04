@@ -1,6 +1,8 @@
 This code is property of Conor McNamara
 /*https://codepen.io/conorjmcnamara/*/
-
+body{
+    font-family:  'Helvetica Neue', Helvetica!important;
+}
 .main_container {
     max-width: 740px;
     height: 100%;
@@ -469,6 +471,36 @@ p {
 .marg{
     margin-top: -260px;
 }
+
+/**
+ * Variables
+ */
+/**
+ * Base Styles
+ * 1. Improve box model
+ * 2. Enable fluid images
+ */
+ *,
+ *:before,
+ *:after {
+   box-sizing: border-box;
+   /* 1 */
+ }
+ 
+ body {
+   background-color: #f5f5f5;
+ }
+ 
+ img {
+   max-width: 100%;
+   /* 2 */
+ }
+ 
+ 
+
+
+
+
 /* --------------- */
 #sync1 .item {
     /* background: #0c83e7;
