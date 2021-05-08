@@ -825,7 +825,7 @@
             maxNumberOfFiles: '',
             responseValidation: false,
             ignoreCallbackErrors: false,
-            maxFileSize: 2,
+            maxFileSize: 20,
             inForm: false,
             ajaxOptions: {},
             onUpload: function () {
