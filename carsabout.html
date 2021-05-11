@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/filter.css" media="All">
+    <link rel="stylesheet" href="css/main.css" media="All">
     <link rel="stylesheet" href="css/card.css" media="All">
   	<link rel="stylesheet" href="css/footer.css" media="All">
 </head>
@@ -252,11 +253,486 @@
                                 
                         </div>
                     </div>
+                   
+
                     <div class="col-lg-4 col-md-4 col-xs-12">
-                        <div class="ata">
+                        <!-- <div class="ata">
                             <marquee behavior="" direction="">Burada reklam olacaq</marquee>
 
-                        </div>
+                        </div> -->
+                        <section id="content">
+                            <form action="#" class="calculator-form" id="calculator-form"></form>
+                                <fieldset>
+                                    <div class="head">
+                                        <strong class="title"><i class="fa fa-calculator"></i> Gömrük ödənişlərinin hesablanması</strong>
+                                    </div>
+                                    <div class="holder">
+                                         <span class="req-info"><i class="req">*</i> Ulduzla qeyd olunmuş xanaları doldurun!</span>
+                                        <div class="select one "> 
+                                            <select placeholder="Nəqliyyatin növünü seçin" id="auto_id">
+                                                <option selected disabled>Nəqliyyatin növünü seçin</option> 
+                                                <option value="1" rel="1">Minik avtomobili</option> 
+                                                <option value="2" rel="2">Avtobuslar-8702( Avro-4 tələb olunur)</option>                                                                                                         
+                                            </select> 
+                                        </div>                                                   
+                                        <div class=" select one">
+                                              <select placeholder="Select country" id="productionCity" name="productionCountry">
+                                                <option selected disabled>Mənşə (istehsal) ölkəsi</option>
+                                                <option value="0" rel="0"></option>
+                                                <option value="27" rel="0">Albaniya</option>
+                                                <option value="10" rel="0">Almaniya</option>
+                                                <option value="36" rel="0">Argentina</option>
+                                                <option value="29" rel="0">Amerika Birləşmiş Ştatları</option>
+                                                <option value="30" rel="0">Amerika Samoası</option>
+                                                <option value="31" rel="0">Andorra</option>
+                                                <option value="34" rel="0">Antarktika</option>
+                                                <option value="35" rel="0">Antiqua və Barbuda</option>
+                                                <option value="11" rel="1">Belarus</option>
+                                                <option value="12" rel="1">Moldova Respublikası</option>
+                                                <option value="13" rel="1">Gürcüstan</option>
+                                                <option value="14" rel="1">Qazaxıstan</option>
+                                                <option value="15" rel="1">Qırğızıstan</option>
+                                                <option value="16" rel="1">Rusiya Federasiyası</option>
+                                                <option value="17" rel="1">Tacikistan</option>
+                                                <option value="19" rel="1">Ukrayna</option>
+                                                <option value="24" rel="0">Əlcəzair</option>
+                                                <option value="33" rel="0">Anqola</option>
+                                                <option value="37" rel="0">Aruba</option>
+                                                <option value="38" rel="0">Avstraliya</option>
+                                                <option value="39" rel="0">Avstriya</option>
+                                                <option value="40" rel="0">Azərbaycan</option>
+                                                <option value="41" rel="0">Baham adaları</option>
+                                                <option value="42" rel="0">Banqladeş</option>
+                                                <option value="43" rel="0">Barbados</option>
+                                                <option value="44" rel="0">Belçika</option>
+                                                <option value="45" rel="0">Beliz</option>
+                                                <option value="46" rel="0">Benin</option>
+                                                <option value="47" rel="0">Bermud adaları</option>
+                                                <option value="48" rel="0">Bəhreyn</option>
+                                                <option value="49" rel="0">Birləşmiş Ərəb Əmirlikləri</option>
+                                                <option value="50" rel="0">Birləşmiş Tanzaniya Respublikası</option>
+                                                <option value="51" rel="0">Boliviya</option>
+                                                <option value="52" rel="0">Bolqarıstan</option>
+                                                <option value="53" rel="0">Boneyr, Sent-Estatius və Saba</option>
+                                                <option value="54" rel="0">Bosniya və Herseqovina</option>
+                                                <option value="55" rel="0">Botsvana</option>
+                                                <option value="56" rel="0">Böyük Britaniya</option>
+                                                <option value="57" rel="0">Braziliya</option>
+                                                <option value="58" rel="0">Bruney-Darüssalam</option>
+                                                <option value="59" rel="0">Burkina-Faso</option>
+                                                <option value="60" rel="0">Burundi</option>
+                                                <option value="61" rel="0">Butan</option>
+                                                <option value="64" rel="0">Cəbəllütariq</option>
+                                                <option value="65" rel="0">Cənubi Afrika Respublikası</option>
+                                                <option value="66" rel="0">Cənubi Sudan</option>
+                                                <option value="67" rel="0">Cibuti</option>
+                                                <option value="69" rel="0">Çad</option>
+                                                <option value="70" rel="0">Çexiya Respublikası</option>
+                                                <option value="71" rel="0">Çili</option>
+                                                <option value="72" rel="0">Çin</option>
+                                                <option value="73" rel="0">Danimarka</option>
+                                                <option value="74" rel="0">Dominika</option>
+                                                <option value="75" rel="0">Dominikan Respublikası</option>
+                                                <option value="76" rel="0">Ekvador</option>
+                                                <option value="77" rel="0">Ekvatorial Qvineya</option>
+                                                <option value="78" rel="0">Eritreya</option>
+                                                <option value="81" rel="0">Estoniya</option>
+                                                <option value="82" rel="0">Farer adaları</option>
+                                                <option value="83" rel="0">Fici</option>
+                                                <option value="84" rel="0">Filippin</option>
+                                                <option value="85" rel="0">Finlandiya</option>
+                                                <option value="87" rel="0">Fransa</option>
+                                                <option value="92" rel="0">Haiti</option>
+                                                <option value="97" rel="0">Hindistan</option>
+                                                <option value="98" rel="0">Honduras</option>
+                                                <option value="100" rel="0">İndoneziya</option>
+                                                <option value="101" rel="0">İordaniya</option>
+                                                <option value="102" rel="0">İraq</option>
+                                                <option value="103" rel="0">İran İslam Respublikası</option>
+                                                <option value="104" rel="0">İrlandiya</option>
+                                                <option value="105" rel="0">İslandiya</option>
+                                                <option value="106" rel="0">İspaniya</option>
+                                                <option value="107" rel="0">İsrail</option>
+                                                <option value="108" rel="0">İsveç</option>
+                                                <option value="109" rel="0">İsveçrə</option>
+                                                <option value="111" rel="0">İtaliya</option>
+                                                <option value="113" rel="0">Kamboca</option>
+                                                <option value="114" rel="0">Kamerun</option>
+                                                <option value="115" rel="0">Kanada</option>
+                                                <option value="117" rel="0">Keniya</option>
+                                                <option value="119" rel="0">Kipr</option>
+                                                <option value="121" rel="0">Kolumbiya</option>
+                                                <option value="122" rel="0">Konqo</option>
+                                                <option value="123" rel="0">Koreya (KXDR)</option>
+                                                <option value="124" rel="0">Koreya Respublikası</option>
+                                                <option value="125" rel="0">Kosta-Rika</option>
+                                                <option value="126" rel="0">Kot-divuar</option>
+                                                <option value="127" rel="0">Kuba</option>
+                                                <option value="130" rel="0">Küveyt</option>
+                                                <option value="131" rel="0">Laos (LXDR)</option>
+                                                <option value="132" rel="0">Latviya</option>
+                                                <option value="133" rel="0">Lesoto</option>
+                                                <option value="134" rel="0">Liberiya</option>
+                                                <option value="135" rel="0">Litva</option>
+                                                <option value="136" rel="0">Livan</option>
+                                                <option value="137" rel="0">Liviya</option>
+                                                <option value="138" rel="0">Lixtenşteyn</option>
+                                                <option value="139" rel="0">Lüksemburq</option>
+                                                <option value="140" rel="0">Macarıstan</option>
+                                                <option value="141" rel="0">Madaqaskar</option>
+                                                <option value="143" rel="0">Makedoniya</option>
+                                                <option value="144" rel="0">Malavi</option>
+                                                <option value="145" rel="0">Malayziya</option>
+                                                <option value="146" rel="0">Maldiv adaları</option>
+                                                <option value="147" rel="0">Mali</option>
+                                                <option value="148" rel="0">Malta</option>
+                                                <option value="149" rel="0">Marşal adaları</option>
+                                                <option value="151" rel="0">Mavrikiya</option>
+                                                <option value="152" rel="0">Mavritaniya</option>
+                                                <option value="153" rel="0">Meksika</option>
+                                                <option value="156" rel="0">Mərakeş</option>
+                                                <option value="157" rel="0">Mərkəzi Afrika Respublikası</option>
+                                                <option value="158" rel="0">Mikroneziya Federativ Ştatları</option>
+                                                <option value="160" rel="0">Misir</option>
+                                                <option value="162" rel="0">Monqolustan</option>
+                                                <option value="163" rel="0">Monteneqro</option>
+                                                <option value="165" rel="0">Mozambik</option>
+                                                <option value="166" rel="0">Müqəddəs Yelena Adası</option>
+                                                <option value="167" rel="0">Myanma</option>
+                                                <option value="168" rel="0">Namibiya</option>
+                                                <option value="169" rel="0">Nauru</option>
+                                                <option value="170" rel="0">Nepal</option>
+                                                <option value="171" rel="0">Hollandiya</option>
+                                                <option value="173" rel="0">Niger</option>
+                                                <option value="174" rel="0">Nigeriya</option>
+                                                <option value="175" rel="0">Nikaraqua</option>
+                                                <option value="178" rel="0">Norveç</option>
+                                                <option value="179" rel="0">Oman</option>
+                                                <option value="180" rel="0">Qabon</option>
+                                                <option value="181" rel="0">Qambiya</option>
+                                                <option value="182" rel="0">Qana</option>
+                                                <option value="183" rel="0">Qayana</option>
+                                                <option value="184" rel="0">Qətər</option>
+                                                <option value="186" rel="0">Qrenada</option>
+                                                <option value="190" rel="0">Qvatemala</option>
+                                                <option value="191" rel="0">Qvineya</option>
+                                                <option value="193" rel="0">Özbəkistan</option>
+                                                <option value="194" rel="0">Pakistan</option>
+                                                <option value="195" rel="0">Palau</option>
+                                                <option value="197" rel="0">Panama</option>
+                                                <option value="198" rel="0">Papua-Yeni Qvineya</option>
+                                                <option value="199" rel="0">Paraqvay</option>
+                                                <option value="200" rel="0">Peru</option>
+                                                <option value="203" rel="0">Polşa</option>
+                                                <option value="204" rel="0">Portuqaliya</option>
+                                                <option value="205" rel="0">Puerto-Riko (ABŞ)</option>
+                                                <option value="209" rel="0">Ruanda</option>
+                                                <option value="210" rel="0">Rumıniya</option>
+                                                <option value="212" rel="0">Samoa</option>
+                                                <option value="213" rel="0">San-Marino</option>
+                                                <option value="215" rel="0">Seneqal</option>
+                                                <option value="222" rel="0">Serbiya</option>
+                                                <option value="223" rel="0">Seyşel adaları</option>
+                                                <option value="224" rel="0">Səudiyyə Ərəbistanı</option>
+                                                <option value="225" rel="0">Sinqapur</option>
+                                                <option value="227" rel="0">Slovakiya</option>
+                                                <option value="228" rel="0">Sloveniya</option>
+                                                <option value="230" rel="0">Somali</option>
+                                                <option value="231" rel="0">Sudan</option>
+                                                <option value="233" rel="0">Surinam</option>
+                                                <option value="234" rel="0">Suriya Ərəb Respublikası</option>
+                                                <option value="235" rel="0">Svazilend</option>
+                                                <option value="236" rel="0">Syerra-Leone</option>
+                                                <option value="239" rel="0">Şri-Lanka</option>
+                                                <option value="240" rel="0">Tailand</option>
+                                                <option value="241" rel="0">Tayvan</option>
+                                                <option value="244" rel="0">Tonqa</option>
+                                                <option value="245" rel="0">Toqo</option>
+                                                <option value="246" rel="0">Trinidad və Tobaqo</option>
+                                                <option value="247" rel="0">Tunis</option>
+                                                <option value="249" rel="0">Tuvalu</option>
+                                                <option value="250" rel="0">Türkiyə</option>
+                                                <option value="251" rel="0">Türkmənistan</option>
+                                                <option value="252" rel="0">Uqanda</option>
+                                                <option value="253" rel="0">Uruqvay</option>
+                                                <option value="254" rel="0">Vanuatu</option>
+                                                <option value="255" rel="0">Vatikan</option>
+                                                <option value="256" rel="0">Venesuela</option>
+                                                <option value="260" rel="0">Vyetnam</option>
+                                                <option value="261" rel="0">Xorvatiya</option>
+                                                <option value="262" rel="0">Yamayka</option>
+                                                <option value="263" rel="0">Yaponiya</option>
+                                                <option value="265" rel="0">Yeni Zelandiya</option>
+                                                <option value="266" rel="0">Yəmən</option>
+                                                <option value="7" rel="0">Yunanıstan</option>
+                                                <option value="4" rel="0">Zimbabve</option>
+                                                <option value="5" rel="0">Zambiya</option>                                                                      
+                                            </select>
+                                        </div>
+                                        <div class=" select">
+                                            <select placeholder="Select country" id="senderCountry" name="senderCountry">
+                                                <option disabled selected>Göndərən ölkə</option>
+                                                <option value="0" rel="0"></option>
+                                                <option value="27" rel="0">Albaniya</option>
+                                                <option value="36" rel="0">Argentina</option>
+                                                <option value="10" rel="0">Almaniya</option>
+                                                <option value="29" rel="0">Amerika Birləşmiş Ştatları</option>
+                                                <option value="30" rel="0">Amerika Samoası</option>
+                                                <option value="31" rel="0">Andorra</option>
+                                                <option value="34" rel="0">Antarktika</option>
+                                                <option value="35" rel="0">Antiqua və Barbuda</option>
+                                                <option value="11" rel="1">Belarus</option>
+                                                <option value="12" rel="1">Moldova Respublikası</option>
+                                                <option value="13" rel="1">Gürcüstan</option>
+                                                <option value="14" rel="1">Qazaxıstan</option>
+                                                <option value="15" rel="1">Qırğızıstan</option>
+                                                <option value="16" rel="1">Rusiya Federasiyası</option>
+                                                <option value="17" rel="1">Tacikistan</option>
+                                                <option value="19" rel="1">Ukrayna</option>
+                                                <option value="24" rel="0">Əlcəzair</option>
+                                                <option value="33" rel="0">Anqola</option>
+                                                <option value="37" rel="0">Aruba</option>
+                                                <option value="38" rel="0">Avstraliya</option>
+                                                <option value="39" rel="0">Avstriya</option>
+                                                <option value="40" rel="0">Azərbaycan</option>
+                                                <option value="41" rel="0">Baham adaları</option>
+                                                <option value="42" rel="0">Banqladeş</option>
+                                                <option value="43" rel="0">Barbados</option>
+                                                <option value="44" rel="0">Belçika</option>
+                                                <option value="45" rel="0">Beliz</option>
+                                                <option value="46" rel="0">Benin</option>
+                                                <option value="47" rel="0">Bermud adaları</option>
+                                                <option value="48" rel="0">Bəhreyn</option>
+                                                <option value="49" rel="0">Birləşmiş Ərəb Əmirlikləri</option>
+                                                <option value="50" rel="0">Birləşmiş Tanzaniya Respublikası</option>
+                                                <option value="51" rel="0">Boliviya</option>
+                                                <option value="52" rel="0">Bolqarıstan</option>
+                                                <option value="53" rel="0">Boneyr, Sent-Estatius və Saba</option>
+                                                <option value="54" rel="0">Bosniya və Herseqovina</option>
+                                                <option value="55" rel="0">Botsvana</option>
+                                                <option value="56" rel="0">Böyük Britaniya</option>
+                                                <option value="57" rel="0">Braziliya</option>
+                                                <option value="58" rel="0">Bruney-Darüssalam</option>
+                                                <option value="59" rel="0">Burkina-Faso</option>
+                                                <option value="60" rel="0">Burundi</option>
+                                                <option value="61" rel="0">Butan</option>
+                                                <option value="64" rel="0">Cəbəllütariq</option>
+                                                <option value="65" rel="0">Cənubi Afrika Respublikası</option>
+                                                <option value="66" rel="0">Cənubi Sudan</option>
+                                                <option value="67" rel="0">Cibuti</option>
+                                                <option value="69" rel="0">Çad</option>
+                                                <option value="70" rel="0">Çexiya Respublikası</option>
+                                                <option value="71" rel="0">Çili</option>
+                                                <option value="72" rel="0">Çin</option>
+                                                <option value="73" rel="0">Danimarka</option>
+                                                <option value="74" rel="0">Dominika</option>
+                                                <option value="75" rel="0">Dominikan Respublikası</option>
+                                                <option value="76" rel="0">Ekvador</option>
+                                                <option value="77" rel="0">Ekvatorial Qvineya</option>
+                                                <option value="78" rel="0">Eritreya</option>
+                                                <option value="81" rel="0">Estoniya</option>
+                                                <option value="82" rel="0">Farer adaları</option>
+                                                <option value="83" rel="0">Fici</option>
+                                                <option value="84" rel="0">Filippin</option>
+                                                <option value="85" rel="0">Finlandiya</option>
+                                                <option value="87" rel="0">Fransa</option>
+                                                <option value="92" rel="0">Haiti</option>
+                                                <option value="97" rel="0">Hindistan</option>
+                                                <option value="98" rel="0">Honduras</option>
+                                                <option value="100" rel="0">İndoneziya</option>
+                                                <option value="101" rel="0">İordaniya</option>
+                                                <option value="102" rel="0">İraq</option>
+                                                <option value="103" rel="0">İran İslam Respublikası</option>
+                                                <option value="104" rel="0">İrlandiya</option>
+                                                <option value="105" rel="0">İslandiya</option>
+                                                <option value="106" rel="0">İspaniya</option>
+                                                <option value="107" rel="0">İsrail</option>
+                                                <option value="108" rel="0">İsveç</option>
+                                                <option value="109" rel="0">İsveçrə</option>
+                                                <option value="111" rel="0">İtaliya</option>
+                                                <option value="113" rel="0">Kamboca</option>
+                                                <option value="114" rel="0">Kamerun</option>
+                                                <option value="115" rel="0">Kanada</option>
+                                                <option value="117" rel="0">Keniya</option>
+                                                <option value="119" rel="0">Kipr</option>
+                                                <option value="121" rel="0">Kolumbiya</option>
+                                                <option value="122" rel="0">Konqo</option>
+                                                <option value="123" rel="0">Koreya (KXDR)</option>
+                                                <option value="124" rel="0">Koreya Respublikası</option>
+                                                <option value="125" rel="0">Kosta-Rika</option>
+                                                <option value="126" rel="0">Kot-divuar</option>
+                                                <option value="127" rel="0">Kuba</option>
+                                                <option value="130" rel="0">Küveyt</option>
+                                                <option value="131" rel="0">Laos (LXDR)</option>
+                                                <option value="132" rel="0">Latviya</option>
+                                                <option value="133" rel="0">Lesoto</option>
+                                                <option value="134" rel="0">Liberiya</option>
+                                                <option value="135" rel="0">Litva</option>
+                                                <option value="136" rel="0">Livan</option>
+                                                <option value="137" rel="0">Liviya</option>
+                                                <option value="138" rel="0">Lixtenşteyn</option>
+                                                <option value="139" rel="0">Lüksemburq</option>
+                                                <option value="140" rel="0">Macarıstan</option>
+                                                <option value="141" rel="0">Madaqaskar</option>
+                                                <option value="143" rel="0">Makedoniya</option>
+                                                <option value="144" rel="0">Malavi</option>
+                                                <option value="145" rel="0">Malayziya</option>
+                                                <option value="146" rel="0">Maldiv adaları</option>
+                                                <option value="147" rel="0">Mali</option>
+                                                <option value="148" rel="0">Malta</option>
+                                                <option value="149" rel="0">Marşal adaları</option>
+                                                <option value="151" rel="0">Mavrikiya</option>
+                                                <option value="152" rel="0">Mavritaniya</option>
+                                                <option value="153" rel="0">Meksika</option>
+                                                <option value="156" rel="0">Mərakeş</option>
+                                                <option value="157" rel="0">Mərkəzi Afrika Respublikası</option>
+                                                <option value="158" rel="0">Mikroneziya Federativ Ştatları</option>
+                                                <option value="160" rel="0">Misir</option>
+                                                <option value="162" rel="0">Monqolustan</option>
+                                                <option value="163" rel="0">Monteneqro</option>
+                                                <option value="165" rel="0">Mozambik</option>
+                                                <option value="166" rel="0">Müqəddəs Yelena Adası</option>
+                                                <option value="167" rel="0">Myanma</option>
+                                                <option value="168" rel="0">Namibiya</option>
+                                                <option value="169" rel="0">Nauru</option>
+                                                <option value="170" rel="0">Nepal</option>
+                                                <option value="171" rel="0">Hollandiya</option>
+                                                <option value="173" rel="0">Niger</option>
+                                                <option value="174" rel="0">Nigeriya</option>
+                                                <option value="175" rel="0">Nikaraqua</option>
+                                                <option value="178" rel="0">Norveç</option>
+                                                <option value="179" rel="0">Oman</option>
+                                                <option value="180" rel="0">Qabon</option>
+                                                <option value="181" rel="0">Qambiya</option>
+                                                <option value="182" rel="0">Qana</option>
+                                                <option value="183" rel="0">Qayana</option>
+                                                <option value="184" rel="0">Qətər</option>
+                                                <option value="186" rel="0">Qrenada</option>
+                                                <option value="190" rel="0">Qvatemala</option>
+                                                <option value="191" rel="0">Qvineya</option>
+                                                <option value="193" rel="0">Özbəkistan</option>
+                                                <option value="194" rel="0">Pakistan</option>
+                                                <option value="195" rel="0">Palau</option>
+                                                <option value="197" rel="0">Panama</option>
+                                                <option value="198" rel="0">Papua-Yeni Qvineya</option>
+                                                <option value="199" rel="0">Paraqvay</option>
+                                                <option value="200" rel="0">Peru</option>
+                                                <option value="203" rel="0">Polşa</option>
+                                                <option value="204" rel="0">Portuqaliya</option>
+                                                <option value="205" rel="0">Puerto-Riko (ABŞ)</option>
+                                                <option value="209" rel="0">Ruanda</option>
+                                                <option value="210" rel="0">Rumıniya</option>
+                                                <option value="212" rel="0">Samoa</option>
+                                                <option value="213" rel="0">San-Marino</option>
+                                                <option value="215" rel="0">Seneqal</option>
+                                                <option value="222" rel="0">Serbiya</option>
+                                                <option value="223" rel="0">Seyşel adaları</option>
+                                                <option value="224" rel="0">Səudiyyə Ərəbistanı</option>
+                                                <option value="225" rel="0">Sinqapur</option>
+                                                <option value="227" rel="0">Slovakiya</option>
+                                                <option value="228" rel="0">Sloveniya</option>
+                                                <option value="230" rel="0">Somali</option>
+                                                <option value="231" rel="0">Sudan</option>
+                                                <option value="233" rel="0">Surinam</option>
+                                                <option value="234" rel="0">Suriya Ərəb Respublikası</option>
+                                                <option value="235" rel="0">Svazilend</option>
+                                                <option value="236" rel="0">Syerra-Leone</option>
+                                                <option value="239" rel="0">Şri-Lanka</option>
+                                                <option value="240" rel="0">Tailand</option>
+                                                <option value="241" rel="0">Tayvan</option>
+                                                <option value="244" rel="0">Tonqa</option>
+                                                <option value="245" rel="0">Toqo</option>
+                                                <option value="246" rel="0">Trinidad və Tobaqo</option>
+                                                <option value="247" rel="0">Tunis</option>
+                                                <option value="249" rel="0">Tuvalu</option>
+                                                <option value="250" rel="0">Türkiyə</option>
+                                                <option value="251" rel="0">Türkmənistan</option>
+                                                <option value="252" rel="0">Uqanda</option>
+                                                <option value="253" rel="0">Uruqvay</option>
+                                                <option value="254" rel="0">Vanuatu</option>
+                                                <option value="255" rel="0">Vatikan</option>
+                                                <option value="256" rel="0">Venesuela</option>
+                                                <option value="260" rel="0">Vyetnam</option>
+                                                <option value="261" rel="0">Xorvatiya</option>
+                                                <option value="262" rel="0">Yamayka</option>
+                                                <option value="263" rel="0">Yaponiya</option>
+                                                <option value="265" rel="0">Yeni Zelandiya</option>
+                                                <option value="266" rel="0">Yəmən</option>
+                                                <option value="7" rel="0">Yunanıstan</option>
+                                                <option value="4" rel="0">Zimbabve</option>
+                                                <option value="5" rel="0">Zambiya</option>
+                                            </select>
+                                            </div>								
+                                    </div>
+                                    <div class="row two">
+                                        <div class="col">
+                                            <label style="
+                                            width: 85px;
+                                        ">Avtomobilin dəyəri ($) <i class="req"> *</i></label>
+                                            <input type="text" class="inp" id="CustomsValue" onkeypress="return isNumberKey(event)" name="CustomsValue" value="">
+                                        </div>
+                                        <div class="col">
+                                            <label>Mühərrikin həcmi (sm<sup>3</sup>)<i class="req">*</i></label>
+                                            <input type="text" class="inp" id="EngineValue" onkeypress="return isNumberKey(event)" name="EngineValue" value="">
+                                        </div>
+                                    </div>
+                                    <div class="row one">
+                                        <div class="col" id="way" style="display:none">
+                                            <label>Yürüyüş kilometri </label>
+                                            <input type="text" id="EngineWay" onkeypress="return isNumberKey(event)" name="EngineWay" value="">
+                                        </div> 
+                                    </div>
+                                    <div >
+                                        <label class="check-label">
+                                            <input type="radio" name="rad" id="rad1" value="moreThan1Year">
+                                            <span>Istehsal tarixi 1 ildən çoxdur</span>
+                                        </label>
+                                            <label class="check-label">
+                                                <input type="radio" name="rad" id="rad2" value="lessThan1Year">
+                                                <span>Istehsal tarixi 1 ildən azdır</span>
+                                            </label>
+                                    </div>
+                                    <div class="exc-rate">Dolların məzənnəsi: <b>1$ = 1.7  AZN</b></div>
+                                    <div class="main_search_button">
+                                        <button class="button blue" id="btnCalculate" name="btnCalculate">Hesabla</button>
+                                    </div>
+                                    
+                                    <script>
+                                        var acc = document.getElementsByClassName("button blue");
+                                        var i;
+            
+                                        for (i = 0; i < acc.length; i++) {
+                                          acc[i].onclick = function() {
+                                            this.classList.toggle("active");
+                                            var panel = this.nextElementSibling;
+                                            if (panel.style.maxHeight){
+                                              panel.style.maxHeight = null;
+                                            } else {
+                                              panel.style.maxHeight = panel.scrollHeight + "px";
+                                            } 
+                                          }
+                                        }
+                                        </script>
+            
+                                        <ul class="panel" style="border: 2px dotted #1384be; background-color: #efefef; font-size:18px; line-height:22px; padding:25px 25px 25px 40px; height: auto;margin-top: 30px; display: none;">
+                                            <li><span>Aksiz vergisi</span>  <span id="aksizvergisi" style="color: #1384be;"></span></li>
+                                            <li><span>Mühərrikin işçi həcminə görə tutulan gömrük rüsum</span>  <span id="muherrikin_ishci_hecmi" style="color: #1384be;"></span></li>
+                                            <li><span>Əməliyyat haqqı</span>  <span id="emeliyyathaqqi" style="color: #1384be;"></span></li>
+                                            <li><span>Vəsiqə haqqı</span>  <span id="vesiqehaqqi" style="color: #1384be;"></span></li>
+                                            <li><span>ƏDV</span>  <span id="edv" style="color: #1384be;"></span></li>
+                                            <li><span>Elektron gömrük xidmətinin göstərilməsinə görə</span>  <span id="egomrukxidmet" style="color: #1384be;"></span></li>
+                                            <li><span>Elektron gömrük xidmətinin göstərilməsinə görə ƏDV</span>  <span id="egomrukxidmetedv" style="color: #1384be;"></span></li>
+                                            <li><span>Cəmi</span>   <b><span id="cem" style="color: #1384be;"></span></b></li>
+            
+                                            
+                                        </ul>
+                            </div>
+                                   
+                                                        
+                                                        
+                                                    </fieldset>
+                                             
+                                </section>
                     </div>
                 </div>
              </div>
@@ -420,16 +896,279 @@
           </div>
       </footer>
    
-    
+     
+    <script src="app/jquery.plugins.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+     
       <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
+    
+      
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="app/jquery-1.11.2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <script src="app/app.js"></script>
+  
+    <script src="app/custom.js"></script>
+
+    <script type="text/javascript">
+	
+        // For auto Calculate
+        $(function () {
+            let url = 'https://customs.gov.az/az/controller';
+            
+    
+            $('#auto_id').change(function(){
+                var  auto_id = $('#auto_id').find('option:selected').val();
+                console.log(auto_id)
+                if(auto_id == 2){
+                    $('#way').show();
+                }else{
+                    $('#way').hide();
+                }
+            })
+             
+            $('#btnCalculate').click(function(e) { 
+                
+                $("ul.panel").slideDown();
+                var  auto_id = $('#auto_id').find('option:selected').val();
+    
+                var prices = [],changes = [],engines= [],engineminuses=[];
+                
+                $.post(url, {'calculator' : true, 'auto_id': auto_id}).done(function(data){
+                    engines = data.values.engines; 
+                    engineminuses = data.values.engineminuses; 
+                    prices = data.values.prices; 
+                    changes = data.values.changes; 
+                
+    
+                var productionCity = $('#productionCity').val();
+                var productionCityRel = $('#productionCity').find('option:selected').attr('rel');
+                var senderCountry = $('#senderCountry').val();
+                var senderCountryRel = $('#senderCountry').find('option:selected').attr('rel');
+                var CustomsValue = $('#CustomsValue').val();
+                var EngineValue = $('#EngineValue').val();
+                var rad = $("input[name=rad]:checked").val();
+                var GR  = 0;
+                var Type = 0;
+                var Price_ = 0;
+                var Emel = 0;
+                var SBOR = 0;
+                var cem = 0;
+                var vesiqe = "";
+                var ElPrice = "";
+                var ElPriceEdv = "";
+                var aks = "";
+                var OUT = 0;
+                var ElPrc  = 0;
+                var rusum  = "";
+                var edv  = "";
+                var currency = parseFloat(1.7);
+                
+    
+                if(productionCity == 0 || senderCountry == 0 || CustomsValue.length == 0 || EngineValue.length == 0 || rad.length == 0){
+                    return false;
+                }
+                else { //all ok
+                    // GR = (rad == 'lessThan1Year') ? 0.4 : 0.7;
+                    // if (rad == 'lessThan1Year' && EngineValue <= 1500) {
+                    // 	GR=0.4;
+                    // }
+                    // if (rad !== 'lessThan1Year' && EngineValue <= 1500) {
+                    // 	GR=0.7;
+                    // }
+    
+                    // if (rad == 'lessThan1Year' && EngineValue > 1500) {
+                    // 	GR=0.7;
+                    // }
+                    // if (rad !== 'lessThan1Year' && EngineValue > 1500) {
+                    // 	GR=1.2;
+                    // }
+                    // if(productionCityRel == '1'){
+                    //  	GR = 0;
+                    //  }
+    
+                     ///new
+                     if (rad == 'lessThan1Year') {
+                        if(auto_id == 2)
+                            GR=0.4;
+                        if(auto_id == 1 && EngineValue <= 1500)
+                            GR=0.4;
+                    }
+                    if (rad !== 'lessThan1Year') {
+                        if(auto_id == 2)
+                            GR=0.7;
+                        if(auto_id == 1 && EngineValue <= 1500)
+                            GR=0.7;
+                    }
+    
+                    if (rad == 'lessThan1Year') {
+                        if(auto_id == 2)
+                            GR=0.7;
+                        if(auto_id == 1 && EngineValue > 1500)
+                            GR=0.7;
+                    }
+                    if (rad !== 'lessThan1Year') {
+                        if(auto_id == 2)
+                            GR=1.2;
+                        if(auto_id == 1 && EngineValue > 1500)
+                            GR=1.2;
+                    }
+                    ///new
+                    if(EngineValue <= parseFloat(engines.engine_0))
+                        Type = 1;
+                    else if(EngineValue <= parseFloat(engines.engine_1) && EngineValue > parseFloat(engines.engine_0))
+                        Type = 2;
+                    else if(EngineValue <= parseFloat(engines.engine_2) && EngineValue > parseFloat(engines.engine_1))
+                        Type = 3;
+                    else if(EngineValue <= parseFloat(engines.engine_3) && EngineValue > parseFloat(engines.engine_2))
+                        Type = 4;
+                    else if(EngineValue > parseFloat(engines.engine_3))
+                        Type = 5;
+    
+                    Price_ = CustomsValue * currency;
+                    
+                    if(Price_ <= 1000)
+                        SBOR = 15;
+                    else if(Price_ <= 10000)
+                        SBOR = 60;
+                    else if(Price_ <= 50000)
+                        SBOR = 120;
+                    else if(Price_ <= 100000)
+                        SBOR = 200;
+                    else if(Price_ <= 500000)
+                        SBOR = 300;
+                    else if(Price_ <= 1000000)
+                        SBOR = 600;
+                    else if(Price_ > 1000000)
+                        SBOR = 1000;
+    
+                    vesiqe = 30;
+                    ElPrice = 30;
+                    ElPriceEdv = 5.40; 
+    
+                    if(Type == 1)
+                        OUT  = parseFloat(prices.price_0) + (EngineValue-parseFloat(engineminuses.engineminus_0)) * parseFloat(changes.change_0);
+                    else if(Type == 2)
+                        OUT = parseFloat(prices.price_1) + (EngineValue-parseFloat(engineminuses.engineminus_1)) * parseFloat(changes.change_1);
+                    else if(Type == 3)
+                        OUT = parseFloat(prices.price_2) + (EngineValue-parseFloat(engineminuses.engineminus_2)) * parseFloat(changes.change_2);
+                    else if(Type == 4)
+                        OUT = parseFloat(prices.price_3) + (EngineValue-parseFloat(engineminuses.engineminus_3)) * parseFloat(changes.change_3);
+                    else if(Type == 5)
+                        OUT = parseFloat(prices.price_4) + (EngineValue-parseFloat(engineminuses.engineminus_4)) * parseFloat(changes.change_4);
+                    
+                    ElPrc = 35.40;
+                    
+                    if(productionCityRel == 1 && senderCountryRel == 1 && productionCity == senderCountry){
+                        rusum = 0;
+                        GR = 0 ;
+                    }
+    
+                    else{
+                        rusum = EngineValue * GR * currency;
+    
+                    }
+    
+    
+                    if(($('#EngineWay').val() > 100000  || rad !== 'lessThan1Year')  & auto_id == 2){
+                        OUT = OUT * 1.5;
+                    } 
+                    
+                    edv = (Price_ + OUT + (EngineValue * GR * currency) + SBOR + vesiqe) * 0.18;
+                    
+                    //cem = OUT + rusum + SBOR + vesiqe + edv + ElPrice + ElPriceEdv;
+                    //cem = OUT + EngineValue * GR * currency + SBOR + 20 +
+                    cem = OUT + rusum + SBOR + vesiqe + edv + ElPrice + round(ElPrice * 18 / 100,2); 
+                    ElPrc + (Price_ + OUT + (EngineValue * GR * currency) + SBOR + 20) * 0.18;
+    
+                    
+    
+                    $('#aksizvergisi').html(round(OUT,2) + ' AZN');
+                    $('#edv').html(round(edv,2) + ' AZN');
+                    $('#emeliyyathaqqi').html(round(SBOR,2) + ' AZN');
+                    
+                    
+                    $('#muherrikin_ishci_hecmi').html(round(rusum,2) + ' AZN');
+                    $('#vesiqehaqqi').html(round(vesiqe,2) + ' AZN');
+                    $('#egomrukxidmet').html(round(ElPrice,2) + ' AZN');
+                    $('#egomrukxidmetedv').html(round(ElPrice * 18 / 100,2) + ' AZN');
+                    $('#cem').html(round(cem,2) + ' AZN');
+                    
+                }
+                });
+                    //alert($('#productionCity').val());
+                    return false;
+            });
+    
+            $("#CustomsValue").one("keypress", function () {
+                $('#SuccessHref').click();
+            });
+            $('.close-pop').click(function(){
+                $('.fancybox-close').click();
+                if($(this).hasClass('countunie')){
+                    console.log('davam')
+                    scrollToBottom('calculator-form');
+                }
+            });
+    
+            function scrollToBottom(id){
+              div_height = $("#"+id).height();
+              div_offset = $("#"+id).offset().top;
+              window_height = $(window).height();
+              $('html,body').animate({
+                scrollTop: div_offset-window_height+2*div_height+150
+              },'slow');
+            }
+    
+    
+        });
+
+        $('#budget_month, #budget_year').change(function()
+	{
+		var v_budget_month = $("#budget_month").val();
+		var v_budget_year = $("#budget_year").val();
+		
+		var data = {
+			"processGetBudget": 1,
+			"budget_month": v_budget_month,
+			"budget_year": v_budget_year
+		};
+		
+		data =  $.param(data);
+		$.ajax({
+			type: "POST",
+			dataType: "json",
+			url: 'https://customs.gov.az/az/controller/',
+			data: data,
+			success: function(data) {
+		
+			$("#gomruk_rusumu_uzre").html(data.gomruk_rusumu_uzre > 0 ? data.gomruk_rusumu_uzre.toFixed(2) : data.gomruk_rusumu_uzre);
+			$("#edv_uzre").html(data.edv_uzre > 0 ? data.edv_uzre.toFixed(2): data.edv_uzre);
+			$("#aksizler_uzre").html(data.aksizler_uzre > 0 ? data.aksizler_uzre.toFixed(2): data.aksizler_uzre);
+			$("#yol_vergisi_uzre").html(data.yol_vergisi_uzre > 0 ? data.yol_vergisi_uzre.toFixed(2): data.yol_vergisi_uzre);
+			
+			$("#budget_total").html((parseFloat(data.gomruk_rusumu_uzre > 0 ? data.gomruk_rusumu_uzre.toFixed(2): data.gomruk_rusumu_uzre) 
+			+ parseFloat(data.edv_uzre > 0 ? data.edv_uzre.toFixed(2): data.edv_uzre) 
+			+ parseFloat(data.aksizler_uzre > 0 ? data.aksizler_uzre.toFixed(2): data.aksizler_uzre) 
+			+ parseFloat( data.yol_vergisi_uzre > 0 ? data.yol_vergisi_uzre.toFixed(2) : data.yol_vergisi_uzre)).toFixed(2));
+			}
+			
+		});
+		return false;
+	
+	
+    });
+    
+	function round(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+        </script>
+
+
+
 </body>
 </html>
