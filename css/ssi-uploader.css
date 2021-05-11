@@ -50,17 +50,7 @@
   color: whitesmoke;
 }
 
-.ssi-button.error {
-  background: #cf5144;
-}
 
-.ssi-button.error:hover {
-  background: #ab4b3f;
-}
-
-.ssi-button.error:active {
-  background: #8f493e;
-}
 
 .ssi-button.info {
   background: #006cbc;
@@ -264,6 +254,9 @@ span.trash7 {
 span.trash10 {
   background-position: 0px -90px;
   background-repeat: no-repeat;
+  background-image: url("/images/remove.png") !important;
+  background-position: center;
+  background-size: 18px 14px;
   overflow: hidden;
   display: block;
   width: 18px;
@@ -432,7 +425,7 @@ table.ssi-fileList tr.ssi-space > td {
 }
 
 .ssi-imgToUploadTable tr td {
-  width: 140px;
+  width: 270px;
 }
 
 .ssi-imgToUploadTable {

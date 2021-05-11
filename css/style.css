@@ -619,6 +619,9 @@ img {
       object-fit: cover !important;
       height: 158px;
   }
+  #sync2{
+      display: none;
+  }
   #sync2 .item {
     /* background: #C9C9C9;
     padding: 10px 0px; */
