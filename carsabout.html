@@ -697,22 +697,6 @@
                                         <button class="button blue" id="btnCalculate" name="btnCalculate">Hesabla</button>
                                     </div>
                                     
-                                    <script>
-                                        var acc = document.getElementsByClassName("button blue");
-                                        var i;
-            
-                                        for (i = 0; i < acc.length; i++) {
-                                          acc[i].onclick = function() {
-                                            this.classList.toggle("active");
-                                            // var panel = this.nextElementSibling;
-                                            // if (panel.style.maxHeight){
-                                            //   panel.style.maxHeight = null;
-                                            // } else {
-                                            //   panel.style.maxHeight = panel.scrollHeight + "px";
-                                            // } 
-                                          }
-                                        }
-                                        </script>
             
                                         <ul class="panel" style="border: 2px dotted #1384be; background-color: #efefef; font-size:18px; line-height:22px; padding:25px 25px 25px 40px; height: auto;margin-top: 30px; display: none;">
                                             <li><span>Aksiz vergisi</span>  <span id="aksizvergisi" style="color: #1384be;"></span></li>
@@ -932,8 +916,9 @@
             })
              
             $('#btnCalculate').click(function(e) { 
-                
-                $("ul.panel").slideDown();
+                setTimeout(() => {
+                 $("ul.panel").slideDown();
+                }, 10000);
                 var  auto_id = $('#auto_id').find('option:selected').val();
     
                 var prices = [],changes = [],engines= [],engineminuses=[];
@@ -1103,7 +1088,9 @@
                     return false;
             });
 
-           
+            //////
+
+            //////
     
             $("#CustomsValue").one("keypress", function () {
                 $('#SuccessHref').click();
