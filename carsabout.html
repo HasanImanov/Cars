@@ -916,8 +916,8 @@
             })
              
             $('#btnCalculate').click(function(e) { 
-                setTimeout(() => {
-                    $("ul.panel").slideDown();
+                
+                
                 var  auto_id = $('#auto_id').find('option:selected').val();
     
                 var prices = [],changes = [],engines= [],engineminuses=[];
@@ -1082,8 +1082,7 @@
                     $('#egomrukxidmetedv').html(round(ElPrice * 18 / 100,2) + ' AZN');
                     $('#cem').html(round(cem,2) + ' AZN');
                 }
-                }, 10000);
-                
+                $("ul.panel").slideDown();
                 });
                     //alert($('#productionCity').val());
                     return false;
